@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPrimary"
+    android:scrollbars="none"
+    tools:context=".RegisterOne">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/bg_gradient_primary_blue" />
+
+    <TextView
+        android:id="@+id/title_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="Buy Ticket"
+        android:fontFamily="@font/mregular"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_details"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_layout_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@+id/title_buy"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Ticket Details"
+                android:textSize="18sp"
+                android:textColor="@color/blackPrimary"
+                android:fontFamily="@font/mregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:text="Check the amount of ticket"
+                android:textSize="14sp"
+                android:textColor="@color/grayPrimary"
+                android:fontFamily="@font/mlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:src="@drawable/ic_ticket_buy"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nama_wisata"
+                        android:textSize="16sp"
+                        android:textColor="@color/blackPrimary"
+                        android:fontFamily="@font/mregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/lokasi"
+                        android:textSize="12sp"
+                        android:textColor="@color/grayPrimary"
+                        android:fontFamily="@font/mlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_minus"
+                        android:background="@drawable/btnmines"
+                        android:layout_width="25dp"
+                        android:layout_height="35dp"/>
+
+                    <TextView
+                        android:id="@+id/jumlah_tiket"
+                        android:text="2"
+                        android:textColor="@color/blackPrimary"
+                        android:fontFamily="@font/mregular"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btn_plus"
+                        android:background="@drawable/btnpls"
+                        android:layout_width="25dp"
+                        android:layout_height="28dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ketentuan"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/grayPrimary"
+                android:fontFamily="@font/mlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pricing"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_layout_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@+id/linear_details"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Pricing"
+                android:textSize="18sp"
+                android:textColor="@color/blackPrimary"
+                android:fontFamily="@font/mregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Your current balance is "
+                    android:textSize="14sp"
+                    android:textColor="@color/grayPrimary"
+                    android:fontFamily="@font/mlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/textMyBalance"
+                    android:text="$ 0"
+                    android:textSize="14sp"
+                    android:textColor="@color/bluePrimary"
+                    android:fontFamily="@font/mmedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/notice_uang"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="-47dp"
+                android:src="@drawable/icon_tidak_cukup_uang"
+                android:layout_width="28dp"
+                android:layout_height="28dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Total Price "
+                    android:textSize="14sp"
+                    android:textColor="@color/grayPrimary"
+                    android:fontFamily="@font/mlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/textTotalHarga"
+                    android:text="$ 0"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/greenPrimary"
+                    android:fontFamily="@font/mmedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_buy_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/pricing"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/bg_btn_green_primary"
+        android:text="PAY NOW"
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/pricing"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_layout_white">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_back"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

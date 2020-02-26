@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketDetail"
+    android:background="@color/bgPrimary">
+
+    <ImageView
+        android:id="@+id/header_ticket_detail"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"/>
+
+    <TextView
+        android:id="@+id/title_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="@font/mregular"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/location_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:lineSpacingExtra="5dp"
+        android:fontFamily="@font/mlight"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/title_ticket"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_info"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_layout_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@+id/location_ticket"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Information"
+                android:textSize="18sp"
+                android:textColor="@color/blackPrimary"
+                android:fontFamily="@font/mregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:text="Knowing before travel"
+                android:textSize="14sp"
+                android:textColor="@color/grayPrimary"
+                android:fontFamily="@font/mlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EDEDED"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:src="@drawable/ic_photo"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/photo_spot_ticket"
+                        android:textSize="16sp"
+                        android:textColor="@color/blackPrimary"
+                        android:fontFamily="@font/mregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:text="Tripod Everywhere"
+                        android:textSize="12sp"
+                        android:textColor="@color/grayPrimary"
+                        android:fontFamily="@font/mlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:src="@drawable/icon_wifi"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/wifi_ticket"
+                        android:textSize="16sp"
+                        android:textColor="@color/blackPrimary"
+                        android:fontFamily="@font/mregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:text="Connect to any tourist"
+                        android:textSize="12sp"
+                        android:textColor="@color/grayPrimary"
+                        android:fontFamily="@font/mlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:src="@drawable/icon_festival"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/festival_ticket"
+                        android:textSize="16sp"
+                        android:textColor="@color/blackPrimary"
+                        android:fontFamily="@font/mregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:text="Dance and Foods"
+                        android:textSize="12sp"
+                        android:textColor="@color/grayPrimary"
+                        android:fontFamily="@font/mlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/short_desc_ticket"
+                android:text="The learning of the Tower of Pisa \ncomes into the story in 1173, when \nconstruction began."
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/grayPrimary"
+                android:fontFamily="@font/mlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_buy_ticket"
+        style="@style/btn_blue_primary"
+        android:layout_below="@+id/linear_info"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="BUY TICKET" />
+
+    <LinearLayout
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/linear_info"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_layout_white">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_back"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
